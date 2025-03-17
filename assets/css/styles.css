@@ -1,0 +1,38 @@
+.precisa {
+    margin: 50px;
+    text-transform: uppercase;
+}
+
+.precisa-image {
+    margin-bottom: 50px;
+    width: 400px;
+    margin-left: 300px;
+}
+
+.titulo-sefin {
+    margin-top: 100px;
+}
+
+.sefin {
+    text-align: center;
+}
+
+.asterisco {
+    color: red;
+}
+
+p{
+    font-size: 14px;
+}
+
+.item {
+    padding-top: 20px;
+    background-color: lightgray;  
+    margin-left: 20px; 
+}
+
+.item:hover {
+    border: solid 2px;
+    border-color: blue;
+    color: black;
+}
