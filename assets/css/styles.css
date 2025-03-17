@@ -26,13 +26,21 @@ p{
 }
 
 .item {
+    width: 150px;
     padding-top: 20px;
     background-color: lightgray;  
     margin-left: 20px; 
+    /* height: 140px; */
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .item:hover {
-    border: solid 2px;
-    border-color: blue;
-    color: black;
+    border: 1px solid;
+    border-color: darkblue;
+    color: #000;
+}
+
+.item:hover p {
+    color: #000;
 }
