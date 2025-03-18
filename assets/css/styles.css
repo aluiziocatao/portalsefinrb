@@ -5,6 +5,19 @@
     width: 597px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .observacao {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
+    .observacao {
+        margin-left: 76px;
+    }
+    
+}
+
 .titulo-o-que-voce-precisa {
     margin-left: 70px;
     text-transform: uppercase;
