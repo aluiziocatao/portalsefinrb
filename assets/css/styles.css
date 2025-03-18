@@ -1,12 +1,13 @@
 .precisa {
-    margin: 50px;
+    margin: 80px;
     text-transform: uppercase;
 }
 
 .precisa-image {
     margin-bottom: 50px;
-    width: 400px;
-    margin-left: 300px;
+    width: 700px;
+    margin-left: 150px;
+    opacity: 0.5;
 }
 
 .titulo-sefin {
@@ -47,4 +48,46 @@ p{
 
 .item:hover p {
     color: #000;
+}
+
+.btn-accessibility {
+    background: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.high-contrast {
+    background-color: black;
+    color: #fff;
+}
+
+.high-contrast a {
+    color: #aff;
+}
+
+.high-contrast img {
+    filter: invert(1);
+}
+
+.high-contrast .faq {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast .faq a p {
+    color: #0ff;
+}
+
+.high-contrast .faq p {
+    color: #0ff;
+}
+
+.high-contrast .faq h3 {
+    color: #0ff;
+}
+
+.high-contrast .faq span {
+    color: #0ff;
 }

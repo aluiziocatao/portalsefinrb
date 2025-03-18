@@ -48,7 +48,9 @@
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-
+          <button class="btn btn-outline-light me-2" onclick="increaseFontSize()">A+</button>
+          <button class="btn btn-outline-light me-2" onclick="decreaseFontSize()">A-</button>
+          <button class="btn btn-outline-light" onclick="toggleContrast()">Contraste</button>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="https://x.com/PrefRioBranco?mx=2"><i class="bi bi-twitter-x"></i></a>
@@ -69,6 +71,7 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#" class="active">Inicio<br></a></li>
+            <li><a href="https://www.riobranco.ac.gov.br" target="_blank">Prefeitura</a></li>
             <li><a href="https://www.riobranco.ac.gov.br/?page_id=10312" target="_blank">Ouvidoria</a></li>
             <li><a href="https://transparencia.riobranco.ac.gov.br/" target="_blank">Portal da Transparência</a></li>
             <li><a href="http://portalcgm.riobranco.ac.gov.br/lai/" target="_blank">Acesso a Informação</a></li>
@@ -84,11 +87,11 @@
     <h2 class="titulo-sefin sefin"><span class="accent section-title">Portal da Secretaria de Finanças - SEFIN</span></h2> 
     <div class="container">
       <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
               <h3 class="precisa">O que você precisa?</h3>
           </div>
-          <div class="col-md-6">
-              <img src="/assets/img/logo2.png" class="img-fluid precisa-image" alt="Descrição da Imagem">
+          <div class="col-md-8">
+              <img src="/assets/img/grafismo-sefin.png" class="img-fluid precisa-image" alt="Descrição da Imagem">
           </div>
       </div>
     </div>
@@ -136,43 +139,43 @@
                 </a>
               </div>
               <div class="col text-center item">
-                <span class="asterisco">*</span>
                 <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/login/" target="_blank">
+                  <span class="asterisco">*</span>
                   <img src="https://prefeitura.rio/wp-content/uploads/2019/08/infracoes.png" width="50" height="50" alt="">
                   <p>Emissão/Consulta de Notas Fiscais Avulsas</p>
                 </a>
               </div>
               <div class="col text-center item">
-                <span class="asterisco">*</span>
                 <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/login/" target="_blank">
+                  <span class="asterisco">*</span>
                   <img src="https://prefeitura.rio/wp-content/uploads/2019/08/alvara.png" width="50" height="50" alt="">
                   <p>Emissão de Alvará</p>
                 </a>
               </div>
               <div class="col text-center item">
-                <span class="asterisco">*</span>
                 <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/login/" target="_blank">
+                  <span class="asterisco">*</span>
                   <img src="https://prefeitura.rio/wp-content/uploads/2019/08/divida-ativa1.png" width="50" height="50" alt="">
                   <p>Consulta de Débitos</p>
                 </a>
               </div>
               <div class="col text-center item">
-                <span class="asterisco">*</span>
                 <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/login/" target="_blank">
+                  <span class="asterisco">*</span>
                   <img src="https://prefeitura.rio/wp-content/uploads/2019/08/itbi1.png" width="50" height="50" alt="">
                   <p>Solicitação de ITBI Online</p>
                 </a>
               </div>
               <div class="col text-center item">
-                <span class="asterisco">*</span>
                 <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/login/" target="_blank">
+                  <span class="asterisco">*</span>  
                   <img src="https://prefeitura.rio/wp-content/uploads/2019/08/vigilancia1.png" width="50" height="50" alt="">
                   <p>Emissão de ISSQN Fixo</p>
                 </a>
               </div>
               <div class="col text-center item">
-                <span class="asterisco">*</span>
                 <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/login/" target="_blank">
+                  <span class="asterisco">*</span>
                   <img src="https://prefeitura.rio/wp-content/uploads/2019/08/outros_serv.png" width="50" height="50" alt="">
                   <p>ISSQN Fora do Municipio</p>                  
                 </a>
@@ -351,6 +354,26 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <!-- Acessibilidade -->
+  <script>
+  let fontSize = 16; // Tamanho base da fonte em pixels
+
+  function increaseFontSize() {
+      fontSize += 2; // Aumenta em 2px
+      document.body.style.fontSize = fontSize + "px";
+  }
+
+  function decreaseFontSize() {
+  if (fontSize > 10) { // Define um mínimo para evitar fontes muito pequenas
+      fontSize -= 2; // Diminui em 2px
+      document.body.style.fontSize = fontSize + "px";
+    }
+  }
+
+  function toggleContrast() {
+      document.body.classList.toggle('high-contrast');
+  }
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
