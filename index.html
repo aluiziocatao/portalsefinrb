@@ -70,8 +70,9 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="#" class="active">Inicio<br></a></li>
+            <li><a href="#" class="active">Inicio</a></li>
             <li><a href="https://www.riobranco.ac.gov.br" target="_blank">Prefeitura</a></li>
+            <li><a href="https://leismunicipais.com.br/prefeitura/ac/riobranco" target="_blank">Legislação</a></li>
             <li><a href="https://www.riobranco.ac.gov.br/?page_id=10312" target="_blank">Ouvidoria</a></li>
             <li><a href="https://transparencia.riobranco.ac.gov.br/" target="_blank">Portal da Transparência</a></li>
             <li><a href="http://portalcgm.riobranco.ac.gov.br/lai/" target="_blank">Acesso a Informação</a></li>
@@ -96,10 +97,7 @@
           </div>
           <div class="col-md-8">
               <img src="assets/img/grafismo-sefin.png" class="img-fluid rb-image" alt="Descrição da Imagem">
-          </div>
-          <span class="container observacao">Serviços com <span class="asterisco">*              
-            </span> necessitam obrigatoriamente realizar login no Portal do Cidadão.
-          </span>
+          </div>          
       </div>
     </div>
   
@@ -164,15 +162,15 @@
                 </a>
               </div>   
               <div class="col text-center item">
-                <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/login/" target="_blank">                  
+                <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/emissao-issqn-fixo/" target="_blank">                  
                   <img src="https://prefeitura.rio/wp-content/uploads/2019/08/vigilancia1.png" width="50" height="50" alt="">
-                  <p>Emissão de ISSQN Fixo<span class="asterisco"> *</span>  </p>
+                  <p>Emissão de ISSQN Fixo</p>
                 </a>
               </div>
               <div class="col text-center item">
-                <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/login/" target="_blank">
+                <a class="link-item" href="https://portalcidadao.riobranco.ac.gov.br/lancamento-iss-fora-municipio/" target="_blank">
                   <img src="https://prefeitura.rio/wp-content/uploads/2019/08/outros_serv.png" width="50" height="50" alt="">
-                  <p>ISSQN Fora do Municipio<span class="asterisco"> *</span>  </p>                  
+                  <p>ISSQN Fora do Municipio</p>                  
                 </a>
               </div>
               <div class="col text-center item">
@@ -223,6 +221,9 @@
                   <p>Requerimentos</p>
                 </a>
               </div>
+              <span class="container observacao">Serviços com <span class="asterisco">*              
+                </span> necessitam obrigatoriamente realizar login no Portal do Cidadão.
+              </span>
     </div>
       </div>
         </div>
@@ -363,23 +364,32 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <!-- Acessibilidade -->
   <script>
-  let fontSize = 16; // Tamanho base da fonte em pixels
+  let currentFontSize = 14;
 
-  function increaseFontSize() {
-      fontSize += 2; // Aumenta em 2px
-      document.body.style.fontSize = fontSize + "px";
-  }
+function increaseFontSize() {
+    currentFontSize += 2;
+    applyFontSize();
+}
 
-  function decreaseFontSize() {
-  if (fontSize > 10) { // Define um mínimo para evitar fontes muito pequenas
-      fontSize -= 2; // Diminui em 2px
-      document.body.style.fontSize = fontSize + "px";
-    }
-  }
+function decreaseFontSize() {
+    currentFontSize -= 2;
+    applyFontSize();
+}
 
-  function toggleContrast() {
-      document.body.classList.toggle('high-contrast');
-  }
+function resetFontSize() {
+    currentFontSize = 14;
+    applyFontSize();
+}
+
+function applyFontSize() {
+    document.querySelectorAll('body, body *').forEach(element => {
+        element.style.fontSize = currentFontSize + 'px';
+    });
+}
+
+function toggleContrast() {
+    document.body.classList.toggle('high-contrast');
+}
   </script>
 
   <!-- Main JS File -->
