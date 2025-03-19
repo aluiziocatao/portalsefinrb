@@ -82,31 +82,16 @@ p{
     color: #fff;
 }
 
-.high-contrast a {
-    color: #aff;
-}
-
 .high-contrast img {
     filter: invert(1);
 }
 
-.high-contrast .faq {
+.high-contrast .faq a p,
+.high-contrast .faq p,
+.high-contrast .faq h3,
+.high-contrast .faq span,
+.high-contrast .faq,
+.high-contrast .faq-content {
+    color: #0ff;
     background-color: #000;
-    color: #fff;
-}
-
-.high-contrast .faq a p {
-    color: #0ff;
-}
-
-.high-contrast .faq p {
-    color: #0ff;
-}
-
-.high-contrast .faq h3 {
-    color: #0ff;
-}
-
-.high-contrast .faq span {
-    color: #0ff;
 }
