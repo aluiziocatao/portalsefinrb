@@ -42,7 +42,7 @@
 }
 
 p{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .item {
@@ -50,7 +50,7 @@ p{
     padding-top: 20px;
     background-color: #ECECEC;  
     margin-left: 20px; 
-    height: 140px;
+    height: 120px;
     border: 1px solid transparent;
     cursor: pointer;
     display: flex;
