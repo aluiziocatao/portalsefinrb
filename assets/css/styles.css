@@ -32,6 +32,14 @@
     }
 }
 
+
+.titulo-o-que-voce-precisa {
+    margin-left: 70px;
+    text-transform: uppercase;
+    font-size: 38px;
+    margin-top: 110px;
+}
+
 @media (max-width: 768px) {
     .titulo-o-que-voce-precisa {
         margin-left: 28px;
@@ -39,13 +47,6 @@
         font-size: 38px;
         margin-top: 0px;
     }
-}
-
-.titulo-o-que-voce-precisa {
-    margin-left: 70px;
-    text-transform: uppercase;
-    font-size: 38px;
-    margin-top: 110px;
 }
 
 .rb-image {
@@ -58,6 +59,10 @@
 }
 
 .sefin {
+    text-align: center;
+}
+
+.slogan {
     text-align: center;
 }
 
