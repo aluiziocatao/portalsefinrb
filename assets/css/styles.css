@@ -5,15 +5,16 @@
     width: 597px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-    .observacao {
-        margin-left: 590px;
+@media only screen and (min-width: 320px) and (max-width: 1024px){
+    .observacao {    
+        margin-right: 0;
     }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px){
     .observacao {
-        margin-left: 76px;
+        margin-right: 0;
+        margin-left: -210px;
     }
     
 }
@@ -49,13 +50,20 @@
     }
 }
 
+.video-iptu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .rb-image {
     width: 1700px;
     opacity: 0.5;
 }
 
 .titulo-sefin {
-    margin-top: 100px;
+    margin-top: 110px;
 }
 
 .sefin {
