@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -27,40 +27,36 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/styles.css" rel="stylesheet">
-  <link href="assets/css/requerimentos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+  <style>
+    .high-contrast {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
   <!-- =======================================================
   * Template Name: PMRBO
   ======================================================== -->
 </head>
-<body> <!-- Inicio do corpo da página -->
-
+<body class="index-page"> <!-- Inicio do corpo da página -->
   ... <!-- Conteúdo da página -->
-
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
       <div class="vw-plugin-top-wrapper"></div>
     </div>
   </div>
-
-  
-
-
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-</body> <!-- Fim do corpo da página -->
-<body class="index-page">
-
   <header id="header" class="header fixed-top">
-
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-
+          <button class="btn btn-outline-light me-2" onclick="increaseFontSize()">A+</button>
+          <button class="btn btn-outline-light me-2" onclick="resetFontSize()">A</button>
+          <button class="btn btn-outline-light me-2" onclick="decreaseFontSize()">A-</button>
+          <button class="btn btn-outline-light" onclick="toggleContrast()">Contraste</button>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="https://x.com/PrefRioBranco?mx=2"><i class="bi bi-twitter-x"></i></a>
@@ -71,255 +67,129 @@
       </div>
     </div><!-- End Top Bar -->
 
-    <div class="branding d-flex align-items-cente">
-
+    <div class="branding d-flex align-items-center">
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center">
-          
+        <a href="index.html" class="d-flex align-items-center">      
           <!-- Uncomment the line below if you also wish to use an image logo -->
-
-          <img src="https://portalcidadao.riobranco.ac.gov.br/img/logoRioBrancoHorizontal.png?pfdrid_c=true" alt="Brasão do Portal" class="img-fluid">
-          <span></span>
+          <img src="assets/img/logoPref.png" alt="Brasão do Portal" class="img-fluid full-width" width="200px">
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="active">Inicio<br></a></li>
-            <li><a href="https://transparencia.riobranco.ac.gov.br/" target="_blank">Portal da Transparência</a></li>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="https://www.riobranco.ac.gov.br" target="_blank">Prefeitura</a></li>
+            <li><a href="https://leismunicipais.com.br/prefeitura/ac/riobranco" target="_blank">Legislação</a></li>
             <li><a href="https://www.riobranco.ac.gov.br/?page_id=10312" target="_blank">Ouvidoria</a></li>
+            <li><a href="https://transparencia.riobranco.ac.gov.br/" target="_blank">Portal da Transparência</a></li>
             <li><a href="http://portalcgm.riobranco.ac.gov.br/lai/" target="_blank">Acesso a Informação</a></li>
-            <li><a href="https://diario.ac.gov.br/" target="_blank">Diário Oficial</a></li>
-
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-
       </div>
-
     </div>
-
   </header>
 
 
-
-
-<main class="main">
-  <h2 class="titulo-sefin sefin"><span class="accent section-title">Portal da Secretaria de Finanças</span></h2> 
-  <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-          <br>
-          <br>
-          <br>
-          <br>
-            <h3 class="titulo-o-que-voce-precisa">Requerimentos</h3>
-        </div>
-        <div class="col-md-8">
-            <img src="assets/img/grafismo-sefin-elevado.png" class="img-fluid rb-image" alt="Descrição da Imagem">
-        </div>          
-    </div>
-  </div>
-  <div class="container text-center">
-    <div class="row">
-      <div class="row">
-        <div class="col-6">
-          <a>IPTU</a>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU - SAÚDE.pdf" target="_blank">Requerimento de Isenção de IPTU - Saúde</a>
-            <i class="bi-filetype-pdf" style="font-size: 2rem; color: #1061ae;"></i>
-          </p>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU - SAÚDE.docx" target="_blank">Requerimento de Isenção de IPTU - Saúde</a>
-            <i class="bi-filetype-docx" style="font-size: 2rem; color: #255e2f;"></i>
-          </p>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.pdf" target="_blank">Requerimento de Isenção de IPTU</a>
-            <i class="bi-filetype-pdf" style="font-size: 2rem; color: #1061ae;"></i>
-          </p>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.docx" target="_blank">Requerimento de Isenção de IPTU</a>
-            <i class="bi-filetype-docx" style="font-size: 2rem; color: #255e2f;"></i>
-          </p>
-        </div>
-        <div class="col-6">
-          <a>CADASTRO IMOBILIÁRIO</a>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE CADASTRO IMOBILIARIO.pdf" target="_blank">Requerimento de Revisão de Cadastro Imobiliário</a>
-            <i class="bi-filetype-pdf" style="font-size: 2rem; color: #1061ae;"></i>
-          </p>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE CADASTRO IMOBILIARIO.docx" target="_blank">Requerimento de Revisão de Cadastro Imobiliário</a>
-            <i class="bi-filetype-docx" style="font-size: 2rem; color: #255e2f;"></i>
-          </p>
-        </div>
-        <hr>
-        <div class="col-6">
-          <a>ALVARÁ DE AUTÔNOMO (PF)</a>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE ALVARÁ DEFINITIVO.pdf" target="_blank">Requerimento de Alvará Definitivo</a>
-            <i class="bi-filetype-pdf" style="font-size: 2rem; color: #1061ae;"></i>
-          </p>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE ALVARÁ DEFINITIVO.docx" target="_blank">Requerimento de Alvará Definitivo</a>
-            <i class="bi-filetype-docx" style="font-size: 2rem; color: #255e2f;"></i>
-          </p>
-        </div>
-        <div class="col-6">
-          <a>INSCRIÇÃO DE AUTÔNOMO (PF)</a>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE INSCRIÇÃO DE AUTONOMO.pdf" target="_blank">Requerimento de Inscrição de Autônomo</a>
-            <i class="bi-filetype-pdf" style="font-size: 2rem; color: #1061ae;"></i>
-          </p>
-          <p>
-            <a href="/requerimentos/REQUERIMENTO DE INSCRIÇÃO DE AUTONOMO.docx" target="_blank">Requerimento de Inscrição de Autônomo</a>
-            <i class="bi-filetype-docx" style="font-size: 2rem; color: #255e2f;"></i>
-          </p>
-        </div>
-        <hr>      
-      </div>
-    </div>
-  </div>
-  <!-- <div class="container">      
-    <div class="row">
-      <div class="col-md-12  p-3">
-        <div class="lista">                                   
-          <div class="row row-cols-4 row-cols-sm-4 row-cols-md-4 row-cols-lg-4 g-3 justify-content-center">
-             Ícones
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU - SAÚDE.pdf" target="_blank">
-                <img src="assets/icons/pdf.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU - SAÚDE</p>
-              </a>
-            </div>
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU - SAÚDE.docx" target="_blank">
-                <img src="assets/icons/docx.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU - SAÚDE (DOCX)</p>
-              </a>
-            </div>
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.pdf" target="_blank">
-                <img src="assets/icons/pdf.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU</p>
-              </a>
-            </div>
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.docx" target="_blank">
-                <img src="assets/icons/docx.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU (DOCX)</p>
-              </a>
-            </div>
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU - SAÚDE.pdf" target="_blank">
-                <img src="assets/icons/pdf.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU - SAÚDE</p>
-              </a>
-            </div>
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU - SAÚDE.docx" target="_blank">
-                <img src="assets/icons/docx.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU - SAÚDE (DOCX)</p>
-              </a>
-            </div>
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.pdf" target="_blank">
-                <img src="assets/icons/pdf.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU</p>
-              </a>
-            </div>
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.docx" target="_blank">
-                <img src="assets/icons/docx.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU (DOCX)</p>
-              </a>
-            </div>
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.pdf" target="_blank">
-                <img src="assets/icons/pdf.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU</p>
-              </a>
-            </div>
-            <div class="col text-center item-requerimento">
-              <a class="link-item" href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.docx" target="_blank">
-                <img src="assets/icons/docx.png" width="100" height="100" alt="">
-                <p>Requerimento de Isenção de IPTU (DOCX)</p>
-              </a>
-            </div>
+  <main class="main">
+<br><br><br><br>
+    <div class="container">
+      <div class="row precisa-grafismo">
+          <div class="col-md-4 o-que-voce-precisa">
+              <h3 class="titulo-o-que-voce-precisa"></h3>
           </div>
-        </div>
+          <div class="col-md-8 grafismo-elevado">
+              <img src="assets/img/grafismo-sefin-elevado.png" class="img-fluid rb-image" alt="Descrição da Imagem">
+          </div>          
       </div>
     </div>
-  </div> -->
-</main>
+  <main class="main">
+    <h2 class="titulo-sefin-requerimento"><span class="accent section-title">Requerimentos</span></h2>
 
-<footer id="footer" class="footer accent-background">
-
-  <div class="container footer-top">
-    <div class="row gy-4">
-      <div class="col-lg-5 col-md-12 footer-about">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <span class="sitename">SECRETARIA DE FINANÇAS</span>
-        </a>
-        <p>Endereço :  Rua Rui Barbosa, 285 - Centro - Rio Branco/AC - CEP 69.900-901 - Tel: (68) 3212-7040 </p>
-        <div class="social-links d-flex mt-4">
-          <a href="https://x.com/PrefRioBranco?mx=2"><i class="bi bi-twitter-x"></i></a>
-          <a href="https://www.facebook.com/PrefRioBranco"><i class="bi bi-facebook"></i></a>
-          <a href=" https://www.instagram.com/prefriobranco/"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.riobranco.ac.gov.br"><i class="bi bi-browser-chrome"></i></a>
-        </div>
+    <div class="container mt-5">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+          <thead class="table-light text-center">
+            <tr>
+              <th>Título</th>
+              <th>Descrição</th>
+              <th>Documentos para Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- IPTU Saúde -->
+            <tr>
+              <td>IPTU - Isenção Saúde</td>
+              <td>Solicitação de isenção de IPTU para contribuintes com necessidades de saúde específicas.</td>
+              <td class="text-center">
+                <a href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU - SAÚDE.pdf" target="_blank">
+                  <i class="bi bi-file-earmark-pdf-fill text-danger fs-4 mx-1"></i>
+                </a>
+                <a href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU - SAÚDE.docx" target="_blank">
+                  <i class="bi bi-file-earmark-word-fill text-primary fs-4 mx-1"></i>
+                </a>
+              </td>
+            </tr>
+    
+            <!-- IPTU Geral -->
+            <tr>
+              <td>IPTU - Isenção Geral</td>
+              <td>Requerimento para isenção de IPTU para demais casos previstos em lei municipal.</td>
+              <td class="text-center">
+                <a href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.pdf" target="_blank">
+                  <i class="bi bi-file-earmark-pdf-fill text-danger fs-4 mx-1"></i>
+                </a>
+                <a href="/requerimentos/REQUERIMENTO DE ISENÇÃO DE IPTU.docx" target="_blank">
+                  <i class="bi bi-file-earmark-word-fill text-primary fs-4 mx-1"></i>
+                </a>
+              </td>
+            </tr>
+    
+            <!-- Cadastro Imobiliário -->
+            <tr>
+              <td>Cadastro Imobiliário</td>
+              <td>Requerimento para revisão e atualização de dados cadastrais de imóveis no município.</td>
+              <td class="text-center">
+                <a href="/requerimentos/REQUERIMENTO DE CADASTRO IMOBILIARIO.pdf" target="_blank">
+                  <i class="bi bi-file-earmark-pdf-fill text-danger fs-4 mx-1"></i>
+                </a>
+                <a href="/requerimentos/REQUERIMENTO DE CADASTRO IMOBILIARIO.docx" target="_blank">
+                  <i class="bi bi-file-earmark-word-fill text-primary fs-4 mx-1"></i>
+                </a>
+              </td>
+            </tr>
+    
+            <!-- Alvará PF -->
+            <tr>
+              <td>Alvará Definitivo - Autônomo (PF)</td>
+              <td>Requerimento para emissão de alvará definitivo de pessoa física autônoma.</td>
+              <td class="text-center">
+                <a href="/requerimentos/REQUERIMENTO DE ALVARÁ DEFINITIVO.pdf" target="_blank">
+                  <i class="bi bi-file-earmark-pdf-fill text-danger fs-4 mx-1"></i>
+                </a>
+                <a href="/requerimentos/REQUERIMENTO DE ALVARÁ DEFINITIVO.docx" target="_blank">
+                  <i class="bi bi-file-earmark-word-fill text-primary fs-4 mx-1"></i>
+                </a>
+              </td>
+            </tr>
+    
+            <!-- Inscrição PF -->
+            <tr>
+              <td>Inscrição de Autônomo (PF)</td>
+              <td>Formulário para solicitação de inscrição municipal de autônomo pessoa física.</td>
+              <td class="text-center">
+                <a href="/requerimentos/REQUERIMENTO DE INSCRIÇÃO DE AUTONOMO.pdf" target="_blank">
+                  <i class="bi bi-file-earmark-pdf-fill text-danger fs-4 mx-1"></i>
+                </a>
+                <a href="/requerimentos/REQUERIMENTO DE INSCRIÇÃO DE AUTONOMO.docx" target="_blank">
+                  <i class="bi bi-file-earmark-word-fill text-primary fs-4 mx-1"></i>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-      <div class="col-lg-2 col-6 footer-links">
-        
-        <ul>
-   
-        </ul>
-      </div>
-
-      <div class="col-lg-2 col-6 footer-links">
-        
-        <ul>
-
-        </ul>
-      </div>
-
-      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-
-      </div>
-
     </div>
-  </div>
-
-  <div class="container copyright text-center mt-4">
-    <p>© <span>Copyright</span> <strong class="px-1 sitename">Prefeitura Municipal de Rio Branco</strong> <span>Todos os direitos reservados</span></p>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you've purchased the pro version. -->
-
-      <p>Assessoria de Tecnologia da Informação</p>
-    </div>
-  </div>
-
-</footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  </main>
 
 </body>
 
