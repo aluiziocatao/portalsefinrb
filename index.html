@@ -38,7 +38,16 @@
   ======================================================== -->
 </head>
 <body class="index-page"> <!-- Inicio do corpo da página -->
-  ... <!-- Conteúdo da página -->
+  <!--Inicio da Modal-->
+  <div id="modalOverlay" class="modal-overlay active">
+      <div class="modal-content">
+        <button id="closeModal" class="close-button">&times;</button>
+        <img src="assets/img/card-refis.png" alt="Imagem em Popup">
+      </div>
+  </div>
+  <!--Fim da Modal-->
+
+  <!-- Conteúdo da página -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -338,6 +347,7 @@
       </div>
 
     </section><!-- /Faq Section -->
+
   </main>
 
   <footer id="footer" class="footer accent-background">
@@ -387,9 +397,10 @@
         <a href="#">Assessoria de Tecnologia da Informação</a>
       </div>
     </div>
+   
 
   </footer>
-
+  
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -437,6 +448,25 @@ function toggleContrast() {
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  
+  <script>
+    const modalOverlay = document.getElementById('modalOverlay');
+    const closeModalButton = document.getElementById('closeModal');
+
+    function closeModal() {
+        modalOverlay.classList.remove('active');
+    }
+
+    closeModalButton.addEventListener('click', closeModal);
+
+    // Para que o popup apareça *apenas* no carregamento,
+    // remova a classe 'active' do div 'modalOverlay' no HTML
+    // e descomente a linha abaixo:
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     modalOverlay.classList.add('active');
+    // });
+</script>
 
 </body>
 
