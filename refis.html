@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Serviços Online - Portal do Cidadão</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favconrbo.png" rel="icon" type="image/png">
+  <link href="assets/img/favconrbo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <style>
+    .high-contrast {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+  <!-- =======================================================
+  * Template Name: PMRBO
+  ======================================================== -->
+</head>
+
+<body class="index-page"> <!-- Inicio do corpo da página -->
+
+  <!-- Conteúdo da página -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <header id="header" class="header fixed-top">
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <button class="btn btn-outline-light me-2" onclick="increaseFontSize()">A+</button>
+          <button class="btn btn-outline-light me-2" onclick="resetFontSize()">A</button>
+          <button class="btn btn-outline-light me-2" onclick="decreaseFontSize()">A-</button>
+          <button class="btn btn-outline-light" onclick="toggleContrast()">Contraste</button>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://x.com/PrefRioBranco?mx=2"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/PrefRioBranco"><i class="bi bi-facebook"></i></a>
+          <a href=" https://www.instagram.com/prefriobranco/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.riobranco.ac.gov.br"><i class="bi bi-browser-chrome"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logoPref.png" alt="Brasão do Portal" class="img-fluid full-width" width="200px">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="https://www.riobranco.ac.gov.br" target="_blank">Prefeitura</a></li>
+            <li><a href="https://leismunicipais.com.br/prefeitura/ac/riobranco" target="_blank">Legislação</a></li>
+            <li><a href="https://www.riobranco.ac.gov.br/?page_id=10312" target="_blank">Ouvidoria</a></li>
+            <li><a href="https://transparencia.riobranco.ac.gov.br/" target="_blank">Portal da Transparência</a></li>
+            <li><a href="http://portalcgm.riobranco.ac.gov.br/lai/" target="_blank">Acesso a Informação</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <body class="refis-page">
+
+    <header id="header" class="header fixed-top">
+      <div class="topbar d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+          <div class="contact-info d-flex align-items-center">
+            <button class="btn btn-outline-light me-2" onclick="increaseFontSize()">A+</button>
+            <button class="btn btn-outline-light me-2" onclick="resetFontSize()">A</button>
+            <button class="btn btn-outline-light me-2" onclick="decreaseFontSize()">A-</button>
+            <button class="btn btn-outline-light" onclick="toggleContrast()">Contraste</button>
+          </div>
+          <div class="social-links d-none d-md-flex align-items-center">
+            <a href="https://x.com/PrefRioBranco?mx=2"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/PrefRioBranco"><i class="bi bi-facebook"></i></a>
+            <a href=" https://www.instagram.com/prefriobranco/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.riobranco.ac.gov.br"><i class="bi bi-browser-chrome"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="branding d-flex align-items-center">
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+          <a href="index.html" class="d-flex align-items-center">
+            <img src="assets/img/logoPref.png" alt="Brasão do Portal" class="img-fluid full-width" width="200px">
+          </a>
+
+          <nav id="navmenu" class="navmenu">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="https://www.riobranco.ac.gov.br" target="_blank">Prefeitura</a></li>
+              <li><a href="https://leismunicipais.com.br/prefeitura/ac/riobranco" target="_blank">Legislação</a></li>
+              <li><a href="https://www.riobranco.ac.gov.br/?page_id=10312" target="_blank">Ouvidoria</a></li>
+              <li><a href="https://transparencia.riobranco.ac.gov.br/" target="_blank">Portal da Transparência</a></li>
+              <li><a href="http://portalcgm.riobranco.ac.gov.br/lai/" target="_blank">Acesso a Informação</a></li>
+              <li><a href="refis.html" class="active">REFIS 2025</a></li>
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <!--INICIO HERO-->
+      <section class="banner-area py-5" id="banner-3">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-12 col-lg-12 col-sm-12">
+              <div class="banner-content text-center style-2">
+                <div class="row">
+                  <div class="col col-12">
+                    <br><br><br>
+                    <img src="assets/img/refis.png" width="100%" class="img-responsive" alt="REFIS 2025">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-md-12">
+                    <br>
+                    <a href="https://portalcidadao.riobranco.ac.gov.br/login/" target="_blank" class="btn btn-info btn-circled">
+                      Pesquise seus Débitos
+                    </a>&nbsp;&nbsp;
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="refis" class="container">
+        <div class="content px-xl-10">
+          <h2>REFIS<strong> 2025</strong></h2>
+        </div>
+        <p>O "REFIS 2025" visa proporcionar aos contribuintes uma oportunidade para regularizar seus débitos
+          fiscais com o município de Rio Branco, oferecendo condições facilitadas para o pagamento de tributos em
+          atraso, entre os principais beneficios estão:
+        </p>
+        <ul style="font-size: small;">
+          <li>Descontos nos encargos moratórios (juros e multa), nas multas decorrentes de descumprimento de obrigação
+            tributária acessória e nas multas punitivas;</li>
+          <li>Redução do valor mínimo de entrada para 3% do total do débito;</li>
+          <li>Maior prazo para o parcelamento das dívidas, em quantidade de parcelas disponíveis. </li>
+        </ul>
+        <P>
+          <a href="http://portalcgm.riobranco.ac.gov.br/lai/wp-content/uploads/2015/06/LEI-COMPLEMENTAR-N%C2%BA-342-DE-29-DE-ABRIL-DE-2025-REFIS-2025.pdf"><strong>LEIA A LEI NA INTEGRA</strong></a>
+        </P>
+      </section>
+      <!--FIM HERO-->
+      <!--INICIO DESCONTOS-->
+      <section id="refis" class="container" style="margin-top: -40px;">
+        <div class="content px-xl-10">
+          <h2>Quais<strong> Descontos?</strong></h2>
+        </div>
+        <p>O REFIS 2025 oferece descontos significativos sobre juros e multas, facilitando a quitação dos seus
+          débitos.</p>
+        <div class="container mt-5">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+              <thead class="table-light text-center">
+                <tr>
+                  <th>Número de parcelas</th>
+                  <th>Contribuintes</th>
+                  <th>Entrada</th>
+                  <th>Desconto sobre Juros e multas (%)</th>
+                </tr>
+              </thead>
+              <tbody style="text-align: center;">
+                <tr>
+                  <td>Parcela única</td>
+                  <td>Todos</td>
+                  <td>-</td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td>2 até 12 parcelas</td>
+                  <td>Todos</td>
+                  <td>3%</td>
+                  <td>80%</td>
+                </tr>
+                <tr>
+                  <td>13 até 24 parcelas</td>
+                  <td>Todos</td>
+                  <td>3%</td>
+                  <td>70%</td>
+                </tr>
+                <tr>
+                  <td>25 até 36 parcelas</td>
+                  <td>Todos</td>
+                  <td>3%</td>
+                  <td>60%</td>
+                </tr>
+                <tr>
+                  <td>37 até 48 parcelas</td>
+                  <td>Todos</td>
+                  <td>3%</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <td>49 até 60 parcelas</td>
+                  <td>Todos</td>
+                  <td>3%</td>
+                  <td>40%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!--FIM DESCONTOS-->
+
+      <!--INICIO DÉBITOS ELEGIVEIS-->
+      <section id="refis" class="container">
+        <div class="container">
+          <div class="col-lg-4">
+            <div class="content px-xl-10">
+              <h2>Débitos<strong> Elegiveis</strong>
+              </h2>
+            </div>
+          </div>
+          <div class="container">
+            <p>Todo tipo de débito junto a Prefeitura, de natureza tributária ou não tributária, inscritos em dívida
+              ativa, vencidos até 31 de dezembro de 2024.</p>
+          </div>
+        </div>
+        <br>
+        <!--FIM DÉBITOS ELEGIVEIS-->
+        <!--INICIO PRAZOS-->
+        <div class="container">
+          <div class="col-lg-4">
+            <div class="content px-xl-10">
+              <h2>Quais<strong> os prazos?</strong>
+              </h2>
+            </div>
+          </div>
+          <div class="container">
+            <p>Fique atento aos prazos para adesão ao REFIS 2025!</p>
+            <p><strong>Período de Adesão:</strong> 22 de março a 29 de agosto de 2025.</p>
+            <p>Não perca essa oportunidade de regularizar sua situação fiscal com condições vantajosas.</p>
+          </div>
+        </div>
+        <br>
+        <!--FIM PRAZOS-->
+        <!--INICIO QUEM PODE ADERIR-->
+        <div class="container">
+          <div class="col-lg-4">
+            <div class="content px-xl-10">
+              <h2>Quem pode<strong> Aderir?</strong></h2>
+            </div>
+          </div>
+          <div class="container">
+            <p>Qualquer Pessoa Física ou Jurídica que tenha débitos com a Prefeitura de Rio Branco.</p>
+          </div>
+        </div>
+      </section>
+      <!--FIM QUEM PODE ADERIR-->
+
+      <section id="refis" class="container">
+        <div class="col-lg-10">
+          <h2>Locais de<strong> Atendimento</strong></h2>
+        </div>
+        <div class="container">
+        <p>A adesão ao REFIS 2025 pode ser feita de forma online ou presencialmente</p>
+        <div class="container mt-5">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+              <thead class="table-light text-center">
+                <tr>
+                  <th>Local</th>
+                  <th>Endereço e telefone</th>
+                </tr>
+              </thead>
+              <tbody style="text-align: left;">
+                <tr>
+                  <td><strong>CENTRAL DE SERVIÇO PÚBLICO – OCA</strong></td>
+                  <td>Praça Vermelha - PMRB<br>
+                    Endereço: Rua Quintino Bocaiuva, 299 - Centro<br>
+                    Dias e horário de atendimento: de segunda a sexta-feira das 7h30min às 13h30min<br>
+                    Telefone de atendimento: (68) 3215-2438 / 3212-7577</td>
+                </tr>
+                <tr>
+                  <td><strong>CENTRO DE ATENDIMENTO AO CIDADÃO – CAC Estação</strong></td>
+                  <td>Mercado Francisco Marinheiro, Box 03 e 04<br>
+                    Endereço: Rua Sorocaba, Esquina com Av. Ceará, Estação Experimental<br>
+                    Dias e horário de atendimento: de segunda a sexta-feira das 7h às 14h<br>
+                    Telefone de atendimento: (68) 3212-7575</td>
+                </tr>
+                <tr>
+                  <td><strong>CENTRO DE ATENDIMENTO AO CIDADÃO – CAC Sobral</strong></td>
+                  <td>Mercado Luiz Galvez, Box 80<br>
+                    Endereço: Estrada do Sobral, s/n - Sobral<br>
+                    Dias e horário de atendimento: de segunda a sexta-feira das 7h às 14h<br>
+                    Telefone de atendimento: (68) 3242-7574</td>
+                </tr>
+                <tr>
+                  <td><strong>CAC - XV</strong></td>
+                  <td>Mercado Municipal José Júlio Saldanha Braga (Mercado do XV)<br>
+                    Endereço: Rua Boulevard Augusto Monteiro, Nº 395, Box: 08, CEP: 69901-230, Bairro Quinze.<br>
+                    Dias e horário de atendimento: de segunda a sexta-feira das 7h às 14h<br>
+                    Telefone de atendimento: (68) 3212-7576</td>
+                </tr>
+                <tr>
+                  <td><strong>SEDE DA PREFEITURA DE RIO BRANCO</strong></td>
+                  <td>Setor de Cobrança Administrativa<br>
+                    Endereço: Rua Rui Barbosa, 285, Centro – Térreo<br>
+                    Horário de atendimento: 7 h às 14 h<br>
+                    Telefone: (68) 3212-7428 </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        </div>
+        <br>
+        <div class="container">
+        <h3>Atendimento para <strong>Débitos Ajuizados</strong></h3>
+        <p>Para atendimento de débitos ajuizados, dirija-se ao local específico:</p>
+        <div class="container mt-5">
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+              <thead class="table-light text-center">
+                <tr>
+                  <th>Local</th>
+                  <th>Endereço e telefone</th>
+                </tr>
+              </thead>
+              <tbody style="text-align: left;">
+                <tr>
+                  <td><strong>DÍVIDA ATIVA</strong></td>
+                  <td>Endereço: AV. Getúlio Vargas, nº 1.521, 2º piso - Bosque<br>
+                    Horário de atendimento: 8 h às 18 h<br>
+                    Telefone: (68) 3212-74497</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        </div>
+              <!-- INICIO FAQ -->
+      <section id="faq" class="faq section">
+
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-4">
+              <div class="content px-xl-10">
+                <h3><span><strong>Dúvidas</strong> - REFIS 2025 </span></h3>
+              </div>
+            </div>
+
+            <div class="col-lg-8">
+
+              <div class="faq-container">
+                <div class="faq-item faq-active">
+                  <h3><span class="num">1.</span> <span>Tenho débitos ajuizados, poderei fazer parte do REFIS?</span>
+                  </h3>
+                  <div class="faq-content">
+                    <p>Sim, débitos ajuizados ou por ajuizar poderão ser parcelados no REFIS, com exceção dos débitos
+                      ajuizados que já exista sentença quanto à penhora no Processo de Execução.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3><span class="num">2.</span> <span>Já tenho um parcelamento no Município, poderei aderir ao
+                      REFIS?</span></h3>
+                  <div class="faq-content">
+                    <p><strong>Sim</strong>, parcelamentos com inadimplência ou até mesmo os adimplentes poderão ser
+                      cancelados a pedido do contribuinte, para adesão ao REFIS. </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3><span class="num">3.</span> <span>Tenho débitos de 2025, poderei parcelar no REFIS?</span></h3>
+                  <div class="faq-content">
+                    <p><strong>Não</strong>, estão incluídos no REFIS somente os débitos vencidos até 31 de dezembro de 2024. </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3><span class="num">4.</span> <span>Quais os documentos que deverei apresentar?</span></h3>
+                  <div class="faq-content">
+                    <p>
+                      <strong>Pessoa Física:</strong> 01 cópia simples da Carteira de Identidade, Habilitação, Carteira
+                      de Trabalho ou da Carteira Profissional (CREA, CRM. OAB e etc.), 01 cópia simples do CPF e 1 cópia simples do comprovante de endereço; </li>
+                      <br><br>
+                      <strong>Pessoa Jurídica:</strong> CNPJ e Ato Constitutivo da Empresa Se for Procurador: 1 cópia
+                      simples da Carteira de Identidade, Habilitação, Carteira de Trabalho ou da Carteira Profissional
+                      (CREA, CRM. OAB e etc.), 1 cópia simples do comprovante de endereço e 01 cópia simples do CPF junto a Procuração.</li>
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3><span class="num">5.</span> <span>Quais as situações que a Prefeitura poderá cancelar o meu
+                      parcelamento no REFIS?</span></h3>
+                  <div class="faq-content">
+                    <p>Pelo não pagamento da entrada, ou seja, primeira parcela de no mínimo 3% (três por cento) sobre
+                      o valor total do débito, ou pela inadimplência por 04 (quatro) meses, consecutivos ou não, do
+                      pagamento das parcelas.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3><span class="num">6.</span> <span>Não poderei comparecer nos Centros de Atendimentos na data para
+                      adesão, mas quero aderir ao REFIS, como faço?</span></h3>
+                  <div class="faq-content">
+                    <p>Poderá constituir um procurador, por meio de Procuração Pública (Cartório) ou Procuração
+                      Particular com reconhecimento de firma em Cartório.</p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+
+                <div class="faq-item">
+                  <h3><span class="num">7.</span> <span>Tem local específico para atendimento de débitos
+                      ajuizados?</span></h3>
+                  <div class="faq-content">
+                    <p><strong>DÍVIDA ATIVA</strong> - Endereço: AV. Getúlio Vargas, nº 1.521, 2º piso - Bosque Horário
+                      de atendimento: 8 h às 18 h / Telefone: (68) 3212-7449.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div><!-- End Faq item-->
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        </div>
+
+      </section>
+      <!--FIM FAQ-->
+    </main>
+
+    <footer id="footer" class="footer accent-background">
+
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">SECRETARIA DE FINANÇAS</span>
+            </a>
+            <p>Endereço : Rua Rui Barbosa, 285 - Centro - Rio Branco/AC - CEP 69.900-901 - Tel: (68) 3212-7040 </p>
+            <div class="social-links d-flex mt-4">
+              <a href="https://x.com/PrefRioBranco?mx=2"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/PrefRioBranco"><i class="bi bi-facebook"></i></a>
+              <a href=" https://www.instagram.com/prefriobranco/"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.riobranco.ac.gov.br"><i class="bi bi-browser-chrome"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+
+            <ul>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+
+            <ul>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Prefeitura Municipal de Rio Branco</strong>
+          <span>Todos os direitos reservados</span>
+        </p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+
+          <a href="#">Assessoria de Tecnologia da Informação</a>
+        </div>
+      </div>
+
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <!-- Acessibilidade -->
+    <script>
+      let currentFontSize = 14;
+
+      function increaseFontSize() {
+        currentFontSize += 2;
+        applyFontSize();
+      }
+
+      function decreaseFontSize() {
+        currentFontSize -= 2;
+        applyFontSize();
+      }
+
+      function resetFontSize() {
+        currentFontSize = 14;
+        applyFontSize();
+      }
+
+      function applyFontSize() {
+        document.querySelectorAll('body *').forEach(element => {
+          element.style.fontSize = currentFontSize + 'px';
+        });
+      }
+
+      function toggleContrast() {
+        document.body.classList.toggle('high-contrast');
+      }
+    </script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+      const modalOverlay = document.getElementById('modalOverlay');
+      const closeModalButton = document.getElementById('closeModal');
+
+      function closeModal() {
+        modalOverlay.classList.remove('active');
+      }
+
+      closeModalButton.addEventListener('click', closeModal);
+
+      // Para que o popup apareça *apenas* no carregamento,
+      // remova a classe 'active' do div 'modalOverlay' no HTML
+      // e descomente a linha abaixo:
+      // document.addEventListener('DOMContentLoaded', function() {
+      //     modalOverlay.classList.add('active');
+      // });
+    </script>
+
+  </body>
+
+</html>
