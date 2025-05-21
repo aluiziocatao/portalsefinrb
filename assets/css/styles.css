@@ -98,16 +98,18 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform .5s ease;
 }
 
 .item:hover {
     border: 1px solid;
-    border-color: darkblue;
-    color: #000;
+    border-color: #a1e1fa;
+    background-color: #a1e1fa;
+    transform: scale(1.1);
 }
 
 .item:hover p {
-    color: #000;
+    color: #1061ae;
 }
 
 .item-requerimento {
