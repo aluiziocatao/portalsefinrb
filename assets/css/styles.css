@@ -136,6 +136,33 @@ p{
     color: #000;
 }
 
+.item-consulta-debitos {
+    width: 150px;
+    padding-top: 20px;
+    background-color: #FBCB20;
+    margin-left: 20px;
+    height: 120px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s ease;
+}
+
+.item-consulta-debitos p {
+    color: #000;
+    font-weight: bold;
+}
+
+.item-consulta-debitos:hover {
+    border: 1px solid;
+    border-color: #fdba12;
+    background-color: #fdba12;
+    transform: scale(1.1);
+}
+
 .btn-accessibility {
     background: white;
     border: none;
