@@ -67,6 +67,8 @@
           <button class="btn btn-outline-light me-2" onclick="resetFontSize()">A</button>
           <button class="btn btn-outline-light me-2" onclick="decreaseFontSize()">A-</button>
           <button class="btn btn-outline-light" onclick="toggleContrast()">Contraste</button>
+          <!-- Onde exibir o número de visitas -->
+          <button class="btn btn-outline-light" id="contador">Carregando visitas...</button>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
           <a href="https://x.com/PrefRioBranco?mx=2"><i class="bi bi-twitter-x"></i></a>
@@ -681,6 +683,59 @@ function toggleContrast() {
                 formHeader.className = 'btn btn1 btn-danger';
             }
         }
+    </script>
+        <!-- Firebase SDK -->
+    <script type="module">
+      // Importa as funções necessárias
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+      import {
+        getFirestore,
+        doc,
+        getDoc,
+        updateDoc,
+        setDoc,
+        onSnapshot
+      } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+      // Suas credenciais do Firebase
+      const firebaseConfig = {
+        apiKey: "AIzaSyAK0dzxeH7tVkK2brOz62zKaTPCBIlraJE",
+        authDomain: "contador-visitas-site-receita.firebaseapp.com",
+        projectId: "contador-visitas-site-receita",
+        storageBucket: "contador-visitas-site-receita.firebasestorage.app",
+        messagingSenderId: "478870630140",
+        appId: "1:478870630140:web:04d22e720c04fb0945f179"
+      };
+
+      // Inicializa Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      const docRef = doc(db, "contador", "visitas");
+
+      // ✅ Atualização em tempo real
+      onSnapshot(docRef, (docSnap) => {
+        if (docSnap.exists()) {
+          const visitas = docSnap.data().total;
+          document.getElementById("contador").innerText = `Visitas: ${visitas}`;
+        } else {
+          document.getElementById("contador").innerText = "Visitas: 0";
+        }
+      });
+
+      // ✅ Incrementa +1 ao carregar a página
+      async function contarVisita() {
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          const visitas = docSnap.data().total + 1;
+          await updateDoc(docRef, { total: visitas });
+        } else {
+          await setDoc(docRef, { total: 1 });
+        }
+      }
+
+      contarVisita();
     </script>
 </body>
 
