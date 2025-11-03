@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+/* Botão flutuante */
+#acessibilidade-btn {
+  position: fixed;
+  bottom: 500px;
+  right: 10px;
+  background: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 20%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Menu */
+#acessibilidade-menu {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+#acessibilidade-menu button {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Estilos de acessibilidade */
+.alto-contraste {
+  filter: invert(100%) hue-rotate(180deg);
+}
+.tons-cinza {
+  filter: grayscale(100%);
+}
+.links-sublinhados a {
+  text-decoration: underline !important;
+}
+.cursor-grande {
+  cursor: url("https://cur.cursors-4u.net/cursors/cur-2/cur116.cur"), auto !important;
+}

@@ -1,0 +1,218 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.image-header {
+    background-color: #1061ae;
+}
+
+.timeline-li {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.nfse-hero {
+    background-image: linear-gradient(135deg, rgba(9, 85, 163, 0.95), rgba(11, 86, 164, 0.6)), url(contabilidade.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: #fff !important;
+    padding: 300px 0 !important;
+    text-align: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.nfse-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bg-contagem-regressiva {
+    background-color: #fdba12;
+    padding-bottom: 5px;
+}
+
+.contador {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 5px !important;
+    gap: 4px !important;
+    flex-wrap: wrap !important;
+}
+
+.contador-item {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    padding: 3px 5px !important;
+    border-radius: 2px !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    align-items: baseline !important;
+    display: flex !important;
+    gap: 1px !important;
+}
+
+.contador-label {
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    color: var(--white) !important;
+    opacity: 0.9 !important;
+    letter-spacing: 0.1px !important;
+    line-height: 1 !important;
+}
+
+.titulo-guia-migracao {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.titulo-contagem-regressiva {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.image-nfse {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.image-nfse:hover {
+    transform: scale(1.1);
+}
+
+.whats-text {
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.nfse-resource-card a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    color: #ccc !important;
+    text-decoration: none !important;
+    padding: 12px !important;
+    border-top: 1px solid #eee !important;
+    transition: color 0.3s ease, background-color 0.3s ease !important;
+}
+
+.nfse-resource-card a:hover {
+    background-color: #2254c6 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.nfse-resource-card a {
+    color: #2254c6 !important;
+}
+
+.nfse-main-cta-link {
+    background-color: #fdba12 !important; /* Replace with your desired color */
+    color: #000000 !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    margin-top: 15px !important;
+    justify-content: center !important;
+    font-size: 18px;
+}
+
+.nfse-main-cta-link:hover {
+    background-color: #ffffff !important; /* Darker shade on hover */
+    color: #2254c6 !important;
+    text-decoration: none !important;
+}
+
+.nfse-resource-card .card-description {
+    margin-bottom: 20px !important;
+    font-size: 0.95rem !important;
+    flex-grow: 1 !important;
+    color: #555 !important;
+}
+
+.item {
+    width: 150px;
+    padding-top: 20px;
+    background-color: #ECECEC;
+    margin-left: 20px;
+    height: 120px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s ease;
+}
+
+.item:hover {
+    border: 1px solid;
+    border-color: #a1e1fa;
+    background-color: #a1e1fa;
+    transform: scale(1.1);
+}
+
+.item:hover p {
+    color: #1061ae;
+}
+
+.btn-accessibility {
+    background: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.high-contrast {
+    background-color: black;
+    color: #fff;
+}
+
+.high-contrast img {
+    filter: invert(1);
+}
+
+.high-contrast .faq a p,
+.high-contrast .faq p,
+.high-contrast .faq h3,
+.high-contrast .faq span,
+.high-contrast .faq,
+.high-contrast .faq-content {
+    color: #0ff;
+    background-color: #000;
+}
+
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px){
+    .titulo-guia-migracao {
+        font-size: 30px !important;
+        margin-top: -100px !important;
+    }
+    .nfse-container h6 {
+        font-size: 15px !important;
+        margin-bottom: -300px !important;
+    }
+}
