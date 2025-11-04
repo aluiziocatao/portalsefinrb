@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Guia de Migração NFS-e Nacional - PMRB</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="notanacional/img/favconrbo.png" rel="icon" type="image/png">
+  <link href="notanacional/img/favconrbo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="notanacional/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="notanacional/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="notanacional/vendor/aos/aos.css" rel="stylesheet">
+  <link href="notanacional/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="notanacional/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="notanacional/css/main.css" rel="stylesheet">
+  <link href="notanacional/css/styles.css" rel="stylesheet">
+  <link href="notanacional/css/timeline.css" rel="stylesheet">
+  <link rel="stylesheet" href="notanacional/css/acessibilidade.css">
+  <!-- =======================================================
+  * Template Name: PMRBO
+  ======================================================== -->
+</head>
+<body class="index-page"> <!-- Inicio do corpo da página -->
+  <!-- Botão flutuante -->
+  <button id="acessibilidade-btn" aria-label="Abrir menu de acessibilidade">A</button>
+  <!-- Fim do Botão Flutuante -->
+  <!-- Menu -->
+  <div id="acessibilidade-menu" role="dialog" aria-label="Menu de acessibilidade">
+    <button data-action="aumentarFonte">Aumentar fonte</button>
+    <button data-action="diminuirFonte">Diminuir fonte</button>
+    <button data-action="aumentarEspacamento">Aumentar espaçamento</button>
+    <button data-action="diminuirEspacamento">Diminuir espaçamento</button>
+    <button data-action="toggleAltoContraste">Alto contraste</button>
+    <button data-action="toggleTonsCinza">Escala de cinza</button>
+    <button data-action="toggleLinksSublinhados">Sublinhar links</button>
+    <button data-action="toggleCursorGrande">Cursor grande</button>
+    <button data-action="resetar">Redefinir</button>
+  </div>
+  <!-- Fim do Menu  -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <header id="header" class="header fixed-top">
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <a href="https://www.riobranco.ac.gov.br" class="text-white">PREFEITURA MUNICIPAL DE RIO BRANCO</a>
+          <!-- <button class="btn btn-outline-light me-2" onclick="increaseFontSize()">A+</button>
+          <button class="btn btn-outline-light me-2" onclick="resetFontSize()">A</button>
+          <button class="btn btn-outline-light me-2" onclick="decreaseFontSize()">A-</button>
+          <button class="btn btn-outline-light" onclick="toggleContrast()">Contraste</button> -->
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="https://x.com/PrefRioBranco?mx=2"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://www.facebook.com/PrefRioBranco"><i class="bi bi-facebook"></i></a>
+          <a href=" https://www.instagram.com/prefriobranco/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.riobranco.ac.gov.br"><i class="bi bi-browser-chrome"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Bar -->
+    <!--INICIO HEADER-->
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="nota_nacional.html" class="d-flex align-items-center">      
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="notanacional/img/logoPref.png" alt="Brasão do Portal" class="img-fluid full-width no-invert" width="200px">
+        </a>
+        <nav id="navmenu" class="navmenu" role="navigation" aria-label="Menu principal">
+          <ul>
+            <li><a href="#" class="active">Início</a></li>
+            <li><a href="https://www.riobranco.ac.gov.br" target="_blank">Prefeitura</a></li>
+            <li><a href="https://leismunicipais.com.br/prefeitura/ac/riobranco" target="_blank">Legislação</a></li>
+            <li><a href="https://www.riobranco.ac.gov.br/?page_id=10312" target="_blank">Ouvidoria</a></li>
+            <li><a href="https://transparencia.riobranco.ac.gov.br/" target="_blank">Portal da Transparência</a></li>
+            <li><a href="http://portalcgm.riobranco.ac.gov.br/lai/" target="_blank">Acesso a Informação</a></li>
+            <li><a href="nota_nacional.html" target="_blank">Nota Nacional</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-hidden="true"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+<!--FIM DO HEADER-->
+  <main class="main">
+    <div class="nfse-hero">
+      <div class="nfse-container">
+        <div class="col-md-12 position-absolute top-50 start-50 translate-middle text-white mt-5">          
+          <h1 class="titulo-guia-migracao text-white pt-5">Guia de Migração para NFS-e Nacional em<br> Rio Branco</h1>
+          <h5 class="text-white pt-3">Com a Reforma Tributária, a emissão de nota fiscal eletrônica passará a <br>
+            ocorrer por meio do emissor nacional. Prepare-se para a transição.</h5>
+        </div>
+      </div>  
+    </div>
+    <div class="col-md-12 text-center mb-4 bg-contagem-regressiva">
+      <h6 class="titulo-contagem-regressiva text-white">Contagem Regressiva!</h6>
+      <div class="contador" id="countdown">
+        <div class="contador-item">
+          <span id="days"></span>
+          <span class="contador-label">Dias</span> 
+        </div>
+        <div class="contador-item">
+          <span id="hours"></span>
+          <span class="contador-label">Horas</span> 
+        </div>
+        <div class="contador-item">
+          <span id="minutes"></span><span class="contador-label">Minutos</span>
+        </div>
+      </div>
+    </div>        
+    <!-- O QUE DE FATO ESTÁ MUDANDO -->
+    <div class="container">      
+      <div class="row py-5">
+        <div class="col-md-6 d-flex flex-column justify-content-center text-primary">
+          <h3>O que, de fato, está mudando?</h3>
+          <p class="whats-text">A emissão da Nota Fiscal de Serviços Eletrônica - NFS-e em Rio Branco deixará de ser realizada por meio do emissor próprio, 
+            passando a ser emitida no <strong>Emissor Nacional de NFS-e.</strong></p>
+          <p class="whats-text">Esta mudança é de caráter <strong>obrigatório</strong> e objetiva trazer simplificação, padronização e redução de custos de conformidade e 
+            aderência à Reforma Tributária.</p>
+          <p class="whats-text"><strong>Na prática:</strong> os contribuintes precisarão se cadastrar para utilizar diretamente o emissor nacional e 
+            efetuar a integração via API para os casos de emissão de NFS-e em lotes.</p>
+          <p class="whats-text"><i>(MEIs já utilizam este sistema desde 2023. As datas abaixo são para os demais contribuintes.)</i></p>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <img src="notanacional/img/nfse.png" class="img-fluid image-nfse" alt="NFSe - Nota Fiscal Eletrônica">
+        </div>
+      </div>
+    </div>
+    <!-- FIM O QUE DE FATO ESTÁ MUDANDO -->  
+     <hr>
+    <!-- INICIO CRONOGRAMA DE MIGRAÇÃO -->
+    <section>
+      <div class="container">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="bi bi-table me-2" style="color: #0d385c; font-size: 40px;"></i>
+              <h2 class="text-center mb-0">Cronograma de Migração</h2>
+            </div>
+          <p class="text-center">A transição será feita em uma única etapa.</p>
+        <div class="row py-3">
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="card border-primary">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <div class="card-header bg-primary text-white">Sociedades Uniprofissionais</div>
+                  <!-- <h5 class="card-title text-white bg-primary"></h5> -->
+                  <p><strong>Data de Ingresso:</strong> 01/01/2026</p>
+                  <p class="card-text"><strong>A quem se aplica:</strong> Médicos, Advogados, Engenheiros, Contadores e demais profissionais aptos a emissão de documentos fiscais.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-warning">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <div class="card-header bg-warning text-white">Optantes do Simples Nacional</div>
+                  <!-- <h5 class="card-title text-warning">Optantes do Simples Nacional</h5> -->
+                  <p><strong>Data de Ingresso:</strong> 01/01/2026</p>
+                  <p class="card-text"><strong>A quem se aplica:</strong> Micro e pequenas empresas optantes pelo Simples.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-success">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <div class="card-header bg-success text-white">Demais Contribuintes (CPF e CNPJ)</div>
+                  <!-- <h5 class="card-title text-success">Demais Contribuintes</h5> -->
+                  <p><strong>Data de Ingresso:</strong> 01/01/2026</p>
+                  <p class="card-text"><strong>A quem se aplica:</strong> Demais contribuintes e autônomos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIM CRONOGRAMA DE MIGRAÇÃO -->
+    <hr>
+    <!-- INICIO Como se Preparar e Emitir Notas? -->
+    <section>
+      <div class="container">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-center">
+              <i class="bi bi-clipboard2-check-fill me-2" style="color: #0d385c; font-size: 40px;"></i>
+              <h2 class="text-center mb-0">Como se Preparar e Emitir Notas?</h2>
+            </div>
+            <p class="text-center">
+            Disponibilizamos todos os recursos que você precisa para fazer a transição de forma tranquila, seja <br>
+            via portal, app ou API.
+            </p>
+        </div>
+        <div class="row gap-3 justify-content-center">
+            <div class="card text-bg-ligth col-md-3" style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">            
+              <div class="card-body">
+                <h5 class="card-title"><strong>Portal Web e App</strong></h5>
+                <div class="nfse-resource-card">
+                  <p class="card-description">Para emissão manual rápida e fácil, ideal para o dia a dia.</p>
+                  <a href="https://www.youtube.com/watch?v=jCf0QQ4n7xc" target="_blank"><i class="bi bi-person-vcard-fill"></i> Video: Cadastro no Portal</a>
+                  <a href="https://www.youtube.com/watch?v=Oxf-l9-Mh1o" target="_blank"><i class="bi bi-pc-display"></i> Video: Emissão via Web</a>
+                  <a href="https://www.youtube.com/watch?v=Z152-eXvOMA" target="_blank"><i class="bi bi-phone-fill"></i> Video: Emissão via App</a>
+                  <a href="https://www.gov.br/nfse/pt-br/ebook-cadastramento-e-emissao-nfs-e-ago-2023.pdf" target="_blank"><i class="bi bi-file-earmark-pdf-fill"></i> E-book de Instruções</a>
+                  <a href="https://www.nfse.gov.br/EmissorNacional/" class="btn btn-lg nfse-main-cta-link" target="_blank">
+                    <i class="bi bi-box-arrow-up-right"></i>Acessar Portal Nacional
+                  </a>
+                </div>
+              </div>
+            </div>
+          <div class="card text-bg-ligth col-md-3"  style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Desenvolvedores (API)</strong></h5>
+              <div class="nfse-resource-card">
+                <p class="card-description">Para quem integra a emissão com sistemas próprios (ERPs).</p>
+                  <a href="https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica" target="_blank"><i class="bi bi-file-code-fill"></i> Documentação Técnica</a>
+                  <a href="https://www.producaorestrita.nfse.gov.br/swagger/contribuintesissqn/" target="_blank"><i class="bi bi-bricks"></i> API de Homologação</a>
+                  <a href="https://www.nfse.gov.br/swagger/contribuintesissqn/" target="_blank"><i class="bi bi-rocket-takeoff-fill"></i> API de Produção</a>
+                  <a href="https://www.producaorestrita.nfse.gov.br/EmissorNacional/" target="_blank"><i class="bi bi-file-check-fill"></i> Portal de Homologação</a>
+                  <a href="https://www.nfse.gov.br/EmissorNacional/" target="_blank"><i class="bi bi-globe"></i> Portal de Produção</a>
+              </div>
+            </div>
+          </div>
+          <div class="card text-bg-ligth col-md-3"  style="transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Consultas e Validação</strong></h5>
+              <div class="nfse-resource-card">
+                  <p class="card-description">Verifique a autenticidade das notas e veja tutoriais rápidos.</p>
+                  <a href="https://www.nfse.gov.br/consultapublica" target="_blank"><i class="bi bi-search"></i> Consulta Pública NFS-e</a>
+                  <a href="https://www.instagram.com/reel/Cx9Nt4muI1r/?igshid=NjZiM2M3MzIxNA%3D%3D" target="_blank"><i class="bi bi-instagram"></i> Tutorial Rápido (Instagram)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div>
+    </section>
+    <!-- FIM Como se Preparar e Emitir Notas? -->
+    <hr>
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+      <div class="container">
+          <div class="d-flex align-items-center justify-content-center">
+              <i class="bi bi-clipboard2-check-fill me-2" style="color: #0d385c; font-size: 40px;"></i>
+              <h2 class="text-center mb-0">Legislação e Dúvidas Frequentes</h2>
+          </div>
+          <p class="text-center mn-3">
+            Acesse a base legal que rege a mudança e encontre respostas para as perguntas mais comuns.
+          </p>
+        <div class="row gy-4 mt-4">
+          <div class="col-lg-5">
+            <div class="content px-xl-10">
+              <h3><span><strong>Precisa de Ajuda?</strong></span></h3>
+              <p>O governo federal mantém uma página completa com as perguntas mais frequentes sobre NFS-e nacional.
+                É o melhor lugar para começar a buscar respostas.
+              </p>
+              <h6><strong><a href="https://www.gov.br/nfse/pt-br/copy_of_perguntas-frequentes/copy_of_faq-nfs-e" target="_blank">Acessar FAQ Oficial</a></strong></h6>
+              <p>Se sua dúvida persistir, o canal de suporte técnico oficial é via e-mail:</p>
+              <p><strong><a href="mailto:atendimento.nfs-e@rfb.gov.br" target="_blank">atendimento.nfs-e@rfb.gov.br</a></strong></p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <h3>Base Legal</h3>
+            <div class="faq-container">
+              <div class="faq-item">
+                <h3><span>Lei Complementar nº 214/2025</span></h3>                
+                <div class="faq-content">
+                  <p>
+                    Institui o IBS, a CBS e o Imposto Seletivo, preparando o terreno para a Reforma Tributária.
+                    <a href="http://legislacao.planalto.gov.br/legisla/legislacao.nsf/Viw_Identificacao/lcp%20214-2025?OpenDocument" target="=_blank"><strong>Acessar Lei -></strong></a>
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3><span>Lei Complementar nº 123/2006</span></h3>                
+                <div class="faq-content">
+                  <p>
+                    Lei que institui o Estatuto Nacional da Microempresa e da Empresa de Pequeno Porte.
+                    <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm" target="=_blank"><strong>Acessar Lei -></strong></a>
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3><span>Resolução CGSN nº 169/2022</span></h3>                
+                <div class="faq-content">
+                  <p>
+                    Define a obrigatoriedade da NFS-e nacional para o MEI.
+                    <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=125242" target="=_blank"><strong>Acessar Resolução -></strong></a>
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3><span>Resolução CGNFS-e nº 3/2023</span></h3>                
+                <div class="faq-content">
+                  <p>
+                    Dispõe sobre o modelo da Nota Fiscal de Serviço eletrônica de padrão nacional.
+                    <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=133140" target="=_blank"><strong>Acessar Resolução -></strong></a>
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3><span>Nota Técnica nº 2023.001</span></h3>                
+                <div class="faq-content">
+                  <p>
+                    Detalha a obrigatoriedade da NFS-e nacional para o Microempreendedor Individual (MEI). 
+                    <a href="https://www.gov.br/nfse/pt-br/nt-2023-001-obrigatoriedade-da-nfs-e-nacional-para-o-mei.pdf" target="=_blank"><strong>Acessar Nota Técnica -></strong></a>
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3><span>Decreto nº 3028/2025</span></h3>                
+                <div class="faq-content">
+                  <p>
+                    Altera o Decreto Municipal nº 3028, de 29 de outubro de 2025.
+                    <a href="notanacional/docs/Decreto_3028_2025_Adesão_ao_Emissor_de_NFSe_Nacional.pdf" target="_blank"><strong>Acessar Decreto -></strong></a>
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- FIM FAQ SECTION -->
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="nota_nacional.html" class="logo d-flex align-items-center">
+            <span class="sitename">SECRETARIA DE FINANÇAS</span>
+          </a>
+          <p>Endereço :  Rua Rui Barbosa, 285 - Centro - Rio Branco/AC - CEP 69.900-901 - Tel: (68) 3212-7040 </p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/PrefRioBranco?mx=2"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/PrefRioBranco"><i class="bi bi-facebook"></i></a>
+            <a href=" https://www.instagram.com/prefriobranco/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.riobranco.ac.gov.br"><i class="bi bi-browser-chrome"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">      
+          <ul>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-6 footer-links">
+          <ul>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Prefeitura Municipal de Rio Branco</strong> <span>Todos os direitos reservados</span></p>
+      <div class="credits">
+        <a href="#">Assessoria de Tecnologia da Informação</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="notanacional/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="notanacional/vendor/php-email-form/validate.js"></script>
+  <script src="notanacional/vendor/aos/aos.js"></script>
+  <script src="notanacional/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="notanacional/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="notanacional/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="notanacional/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="notanacional/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  
+  <!-- Main JS File -->
+  <script src="notanacional/js/main.js"></script>
+  <!-- Accessibility.js -->
+  <script src="notanacional/js/acessibilidade.js"></script>
+  
+</body>
+
+</html>
